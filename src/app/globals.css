@@ -1,0 +1,145 @@
+/* 🎨 General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 🚀 Navbar */
+.navbar {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #222;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* 🔎 Search & Filters */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 280px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* 🖼️ Gallery Grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🔘 Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* 🎨 Button Styles */
+button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.details-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.favorite-button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.load-more button {
+  background-color: #28a745;
+  color: white;
+}
+
+/* 📡 Loading Animation (Centered) */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  gap: 15px; 
+  text-align: center;
+}
+
+/* 🔄 Spinner Animation */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ⏳ Loading Text */
+.loading-container p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* 📌 Space Below Load More Button */
+.load-more {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* 🔽 Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #222;
+  margin-top: 20px;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+}
+
+.highlight-name {
+  color: #FFD700;  /* Gold color for highlighting */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-link {
+  color: #00bfff;  /* Light blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
